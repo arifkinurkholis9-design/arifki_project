@@ -1,0 +1,96 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+    --bs-primary: #176b63;
+    --bs-primary-rgb: 23, 107, 99;
+    --portal-ink: #182c31;
+    --portal-muted: #6d8084;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7f6;
+    color: var(--portal-ink);
+}
+
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.75rem 1.5rem rgba(15, 23, 42, 0.12) !important;
+}
+
+.portal-navbar,
+.portal-footer {
+    background: #173b3a;
+}
+
+.portal-navbar .nav-link {
+    border-radius: 0.5rem;
+    padding-inline: 0.9rem !important;
+}
+
+.portal-navbar .nav-link.active,
+.portal-navbar .nav-link:hover {
+    background: rgba(255, 255, 255, 0.13);
+    color: #fff;
+}
+
+.brand-mark {
+    display: inline-grid;
+    width: 2.25rem;
+    height: 2.25rem;
+    place-items: center;
+    border-radius: 0.7rem;
+    background: #b7e4d4;
+    color: #173b3a;
+    font-size: 0.85rem;
+}
+
+.demo-notice {
+    border: 1px solid #cde6dd;
+    border-radius: 0.75rem;
+    background: #edf8f3;
+    color: #315b4d;
+    font-size: 0.88rem;
+    padding: 0.8rem 1rem;
+}
+
+.page-heading {
+    color: var(--portal-ink);
+}
+
+.metric-card {
+    border: 0;
+    box-shadow: 0 0.35rem 1.2rem rgba(19, 55, 54, 0.06);
+}
+
+.metric-label {
+    color: var(--portal-muted);
+    font-size: 0.9rem;
+}
+
+.metric-value {
+    color: #176b63;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.record-image {
+    height: 180px;
+    object-fit: cover;
+}
+
+.table > :not(caption) > * > * {
+    vertical-align: middle;
+}
+
+.table-image {
+    width: 68px;
+    height: 52px;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
